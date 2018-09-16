@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ ZoomIn()
+comment1.params=
+comment1.target=void\ Rotate90CCWZ()
+comment2.params=
+comment2.target=void\ Rotate90CWZ()
+comment3.params=
+comment3.target=void\ Rotate90CWY()
+comment4.params=
+comment4.target=void\ Rotate90CCWY()
+comment5.params=
+comment5.target=void\ Rotate90CWX()
+comment6.params=
+comment6.target=void\ Rotate90CCWX()
+numComments=7

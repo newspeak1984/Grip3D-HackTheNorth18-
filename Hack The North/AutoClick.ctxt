@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=robot
+comment0.target=void\ leftClick(java.awt.Robot)
+comment1.params=robot
+comment1.target=void\ doubleleftClick(java.awt.Robot)
+numComments=2
