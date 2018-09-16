@@ -1,3 +1,4 @@
+ import org.json.*;
  import java.awt.*;
  import java.awt.AWTException;
  import java.io.IOException;
@@ -6,7 +7,7 @@
 public class Main {
     public static void main(){
         Inventor invent = new Inventor();
-        invent.Rotate90CWZ();
+        invent.ZoomOut();
         //invent.Rotate90CCWX();
     }
 }
