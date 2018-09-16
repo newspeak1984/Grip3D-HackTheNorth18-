@@ -21,6 +21,21 @@ public class Inventor{
         robot.mouseWheel(1);
         robot.mouseMove(initialx, initialy);
     }
+    
+    public void ZoomOut(){
+        try{
+            robot = new Robot();
+        } catch (AWTException e){
+            e.printStackTrace();
+        }
+        robot.delay(2000);
+        Point a = MouseInfo.getPointerInfo().getLocation();     
+        int initialx = (int) a.getX();
+        int initialy = (int) a.getY();
+        robot.mouseMove(1000, 550);
+        robot.mouseWheel(-1);
+        robot.mouseMove(initialx, initialy);
+    }
 
     public void Rotate90CCWZ(){  
         try{
@@ -34,13 +49,14 @@ public class Inventor{
         int initialy = (int) a.getY();
         //move
         robot.keyPress(KeyEvent.VK_F4);
-        robot.mouseMove(735, 207);
+        robot.mouseMove(1200, 250);
         robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
-        for(int i = 0; i < 350; i++){
-            robot.mouseMove(735-i, 207+i);
-            robot.delay(1);
+        for(int i = 0; i < 220; i++){
+            robot.mouseMove(1200-i, 250);
+            robot.delay(2);
         }
         robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+        robot.delay(2000);
         robot.keyRelease(KeyEvent.VK_F4);
         robot.mouseMove(initialx, initialy); 
     }
@@ -57,13 +73,14 @@ public class Inventor{
         int initialy = (int) a.getY();
         //move
         robot.keyPress(KeyEvent.VK_F4);
-        robot.mouseMove(735, 207);
+        robot.mouseMove(1200, 250);
         robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
-        for(int i = 0; i < 250; i++){
-            robot.mouseMove(735+i, 207+i);
-            robot.delay(1);
+        for(int i = 0; i < 165; i++){
+            robot.mouseMove(1300+i, 250);
+            robot.delay(2);
         }
         robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+        robot.delay(2000);
         robot.keyRelease(KeyEvent.VK_F4);
         robot.mouseMove(initialx, initialy); 
     }
@@ -80,10 +97,10 @@ public class Inventor{
         int initialy = (int) a.getY();
         //move
         robot.keyPress(KeyEvent.VK_F4);
-        robot.mouseMove(590, 418);
+        robot.mouseMove(1300, 550);
         robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
         for(int i = 0; i < 270; i++){
-            robot.mouseMove(590-i, 418);
+            robot.mouseMove(1300-i, 550);
             robot.delay(1);
         }
         robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
@@ -103,10 +120,10 @@ public class Inventor{
         int initialy = (int) a.getY();
         //move
         robot.keyPress(KeyEvent.VK_F4);
-        robot.mouseMove(590, 418);
+        robot.mouseMove(1300, 550);
         robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
         for(int i = 0; i < 270; i++){
-            robot.mouseMove(590+i, 418);
+            robot.mouseMove(1300+i, 550);
             robot.delay(1);
         }
         robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
@@ -126,10 +143,10 @@ public class Inventor{
         int initialy = (int) a.getY();
         //move
         robot.keyPress(KeyEvent.VK_F4);
-        robot.mouseMove(802, 207);
+        robot.mouseMove(1100, 250);
         robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
         for(int i = 0; i < 135; i++){
-            robot.mouseMove(802, 207-i);
+            robot.mouseMove(1100, 250-i);
             robot.delay(1);
         }
         robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
@@ -149,10 +166,10 @@ public class Inventor{
         int initialy = (int) a.getY();
         //move
         robot.keyPress(KeyEvent.VK_F4);
-        robot.mouseMove(802, 207);
+        robot.mouseMove(1100, 250);
         robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
         for(int i = 0; i < 135; i++){
-            robot.mouseMove(802, 207+i);
+            robot.mouseMove(1100, 250+i);
             robot.delay(1);
         }
         robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
